@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK Republic day celebration</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="modal" id="modal">
+        <div class="guidline">
+            <div class="close-btn">
+                <button onclick="hideGuidline()"><img src="./img/close-btn.png" alt="" style="width: 15vw;"></button>
+            </div>
+            <div class="guidline-banner">
+                <div class="guidline-title">
+                    <!-- <img src="./img/SchedukeText.png" alt="" width="100%"> -->
+                    HOW TO PLAY
+                </div>
+                <div class="rules">
+                    <ul>
+                        <li>Top 12 Dancers, 12 Singers and 6 Fashion talents have to register their ids with SK employees to participate in this event.</li>
+                        <li>Pk Battle will be held on Republic Day.</li>
+                        <li>dancers and singers’ talents must wear tricolor outfits and need to perform patriotic (deshbhakt) performances on this special Republic Day.</li>
+                        <li>For fashion battle talents need to wear costumes according to Republic Day.</li>
+                        <li>PK match will be held between the talents from same category, Dancer go against dancer, Singers go against singer, Fashion go against fashion.</li>
+                    <li>Talents need to come live 15 min before the PK Battle, there will be a 15-min official PK match scheduled for the event.</li>
+                <li>First Talent to the left on the webpage schedule, will start the performance first and will perform for first 5 – 6 Min, then next talent will perform for 5 – 6 Min.</li>    
+            <li>Will have 1 winner from each category (Dancing, Singing & Fashion) based on maximum beans received in the event will be mentioned in the BANNER for 3 days.</li>    
+        <li>Talents and User will be ranked on the leaderboard based on the maximum beans received and spent respectively in the event.</li>    
+    <li>Top Talent from each category has a chance to win a Spotlight slot.</li>    
+    <li>Talent ranking will be separate for each category.</li>
+    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <button class="guid-btn" onclick="showGuidline()">
+            <img src="./img/GuideButton.png" alt="" width="100%">
+        </button>
+        <div class="header">
+            <img src="./img/HeaderDesign.png" alt="header" width="100%">
+            <img src="./img/Date-Month.png" alt="datemonth" width="100%" style="margin-top: -1.5vw">
+        </div>
+        <div class="col2">
+            <button onclick="setUserMode()"><img src="./img/UserButton.png" alt="userbtn" width="100%" id="user-btn"></button>
+            <button onclick="setTalentMode()"><img src="./img/TalentButtonUnselect.png" alt="TalentButton" width="100%" id="talent-btn"></button>
+        </div>
+        <div class="reward-schedule-banner">
+            <div class="reward-schedule-title">
+                <img src="./img/RewardsText.png" alt="" width="100%">
+            </div>
+            <div class="reward-slider">
+                <img src="./img/user-rewards/BeansPot1.png" alt="" width="100%" id="reward-img">
+                <div class="reward-description" id="reward-description">User receives 25% of total beans pot</div>
+            </div>
+        </div>
+        <div class="col3">
+            <button onclick="setDancingSchedule()"><img src="./img/DancingButton.png" alt="" width="100%" id="dancing-btn"></button>
+            <button onclick="setSingingSchedule()"><img src="./img/SingingButtonUnselect.png" alt="" width="100%" id="singing-btn"></button>
+            <button onclick="setFashionSchedule()"><img src="./img/FashionButtonUnselect.png" alt="" width="100%" id="fashion-btn"></button>
+        </div>
+        <div class="reward-schedule-banner">
+            <div class="reward-schedule-title">
+                <img src="./img/SchedukeText.png" alt="" width="100%">
+            </div>
+            <div id="dancing">
+                <div class="scheduleTable">
+                    <table>
+                        <tbody>
+                            <tr class="r1">
+                                <th>Date</th>
+                                <th>Talent</th>
+                                <th><img src="./img/vs.png" alt="" /></th>
+                                <th>Talent</th>
+                                <th>Time</th>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1dancing<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="singing">
+                <div class="scheduleTable">
+                    <table>
+                        <tbody>
+                            <tr class="r1">
+                                <th>Date</th>
+                                <th>Talent</th>
+                                <th><img src="./img/vs.png" alt="" /></th>
+                                <th>Talent</th>
+                                <th>Time</th>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1singing<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="fashion">
+                <div class="scheduleTable">
+                    <table>
+                        <tbody>
+                            <tr class="r1">
+                                <th>Date</th>
+                                <th>Talent</th>
+                                <th><img src="./img/vs.png" alt="" /></th>
+                                <th>Talent</th>
+                                <th>Time</th>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1fashion<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                            <tr>
+                                <td>01-01-2023</td>
+                                <td>
+                                    Tejaswini1Round1<br />ID:<a
+                                        href="http://www.kktv1.com/m/?roomid=610655733">610655733</a>
+                                </td>
+                                <td><img src="./img/vs.png" alt="" /></td>
+                                <td>
+                                    Tejaswini1<br />ID:<a href="http://www.kktv1.com/m/?roomid=602610147">602610147</a>
+                                </td>
+                                <td>19:30-19:45 IST</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            All Right Reserved by StreamKar
+        </div>
+    </div>
+</body>
+
+</html>
