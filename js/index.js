@@ -31,13 +31,13 @@ let slidNumber = 0;
 
 function setReward() {
     if (mode == 'user') {
-        if (slidNumber == 4 || slidNumber==-1) slidNumber = 0;
+        if (slidNumber == 4 || slidNumber == -1) slidNumber = 0;
         else slidNumber = slidNumber + 1;
         document.getElementById('reward-description').innerHTML = userRewards[slidNumber];
         document.getElementById('reward-img').src = userRewardsImg[slidNumber];
     }
     else {
-        if (slidNumber == 3 || slidNumber==-1) slidNumber = 0;
+        if (slidNumber == 3 || slidNumber == -1) slidNumber = 0;
         else slidNumber = slidNumber + 1;
         document.getElementById('reward-description').innerHTML = talentRewards[slidNumber];
         document.getElementById('reward-img').src = talentRewardsImg[slidNumber];
@@ -85,7 +85,7 @@ function setUserMode() {
     mode = 'user'
     document.getElementById("user-btn").src = "../img/UserButton.png";
     document.getElementById('talent-btn').src = "../img/TalentButtonUnselect.png";
-    slidNumber=-1;
+    slidNumber = -1;
     setReward();
 }
 
@@ -93,6 +93,6 @@ function setTalentMode() {
     mode = 'talent'
     document.getElementById("user-btn").src = "../img/UserButtonUnselect.png";
     document.getElementById('talent-btn').src = "../img/TalentButton.png";
-    slidNumber=-1;
+    slidNumber = -1;
     setReward();
 }
