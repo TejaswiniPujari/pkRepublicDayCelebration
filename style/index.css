@@ -12,9 +12,11 @@ body {
 .header {
     width: 100vw;
 }
+
 .grey-filter {
     filter: grayscale(1) !important;
 }
+
 .main {
     opacity: 0.2;
     height: 100vh;
@@ -71,11 +73,10 @@ button {
 }
 
 .guidline-title {
-    color: white;
-    text-align: center;
-    font-size: 6vw;
-    padding-top: 3vw;
-    text-shadow: 2px 2px 4px #000000;
+    width: 12vw;
+    margin: 0 auto;
+    padding-top: 2vw;
+    transform: scale(2, 1);
 }
 
 .guidline {
@@ -87,15 +88,11 @@ button {
 }
 
 .guidline-banner {
-    background-image: url(../img/RewardsScheduleBG.png);
+    background-image: url(../img/Guidbg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 50vh;
-    /* position: fixed;
-    top: 50%;
-    left: 50%; */
     width: 90vw;
-    /* transform: translate(-50%, -50%); */
     margin: 0 auto;
     padding-bottom: 8vw;
 }
@@ -103,7 +100,7 @@ button {
 .rules {
     padding: 0 5vw 0 10vw;
     margin-top: 12vw;
-    max-height: 40vh;
+    max-height: 60vh;
     overflow: auto;
     font-size: 5vw;
 }
@@ -112,6 +109,11 @@ button {
     width: 60vw;
     margin: 0 auto;
     margin-top: 10vw;
+}
+
+.reward-description {
+    width: 80vw;
+    margin: 0 auto;
     font-size: 5vw;
     font-weight: bold;
     text-align: center;
